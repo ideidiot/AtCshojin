@@ -1,5 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
+#difine pb = push_back
+
 
 int main(){
     ios_base::sync_with_stdio(false);
@@ -17,8 +19,8 @@ int main(){
         int a, b;
         cin >> a >> b;
         from[i] = {a, b};
-        if (a != 0) adj[a].push_back(i);
-        if (b != 0) adj[b].push_back(i);
+        if (a != 0) adj[a].pb(i);
+        if (b != 0) adj[b].pb(i);
     }
 
     int c = 0;
